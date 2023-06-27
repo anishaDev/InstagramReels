@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "173853613253",
+    "project_id": "geofencingapp-71319",
+    "storage_bucket": "geofencingapp-71319.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173853613253:android:c7f3f1a48eb0d949bd64ac",
+        "android_client_info": {
+          "package_name": "com.geozone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173853613253-1ncuopijaftjh25pnpq8fp580l031p0r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3097QTMAeNEmO2GyHIF3Z7cxO_M6xoz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173853613253-1ncuopijaftjh25pnpq8fp580l031p0r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
