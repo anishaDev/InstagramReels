@@ -4,6 +4,11 @@ import android.app.Application;
 import android.content.Context;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
+import iyegoroff.imagefilterkit.ImageFilterKitPackage;
+
+import com.RNFetchBlob.RNFetchBlobPackage;
+
+import com.anyline.RNImageToPDF.RNImageToPdfPackage;
 import com.christopherdro.RNPrint.RNPrintPackage;
 import com.christopherdro.RNPrint.RNPrintPackage;
 import com.vinzscam.reactnativefileviewer.RNFileViewerPackage;
@@ -47,6 +52,12 @@ public class MainApplication extends Application implements ReactApplication {
             // packages.add(new BackgroundActionsPackage());
           // Packages that cannot be autolinked yet can be added manually here, for example:
           // packages.add( new MainReactPackage(),
+            new ImageFilterKitPackage();
+          
+            new RNFetchBlobPackage();
+   
+           
+            new RNImageToPdfPackage();
             new RNPrintPackage();
             new RNPrintPackage();
             new RNFileViewerPackage();

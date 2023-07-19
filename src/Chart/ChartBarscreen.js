@@ -35,6 +35,7 @@ const ChartBarscreen = () => {
 //     }
 // };
 
+
   return (
     <View>
      <BarChart

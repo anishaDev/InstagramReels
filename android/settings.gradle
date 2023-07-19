@@ -1,4 +1,17 @@
 rootProject.name = 'GeoZone'
+include ':react-native-image-filter-kit'
+project(':react-native-image-filter-kit').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-image-filter-kit/android')
+
+include ':rn-fetch-blob'
+project(':rn-fetch-blob').projectDir = new File(rootProject.projectDir, '../node_modules/rn-fetch-blob/android')
+include ':react-native-document-scanner'
+project(':react-native-document-scanner').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-document-scanner/android')
+include ':react-native-blob-util'
+project(':react-native-blob-util').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-blob-util/android')
+include ':react-native-pdf'
+project(':react-native-pdf').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-pdf/android')
+include ':react-native-image-to-pdf'
+project(':react-native-image-to-pdf').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-image-to-pdf/android')
 include ':react-native-print'
 project(':react-native-print').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-print/android')
 include ':react-native-print'

@@ -1,10 +1,10 @@
 import { StyleSheet, Text, View,FlatList,Image, Dimensions ,} from 'react-native'
 import React, { useState,useEffect,useCallback,useRef } from 'react'
 import { useFocusEffect,useIsFocused } from '@react-navigation/native';
-
+import HeaderComp from "../components/HeaderComp"
 const screenWidth = Dimensions.get('window').width
 const screenheight = Dimensions.get('window').height
-const Reelsscreen = () => {
+const Reelsscreen = ({navigation}) => {
 
     const[reels,setReels] = useState([])
     const isFocused = useIsFocused();
@@ -41,7 +41,11 @@ getReels()
     const flatListRef = React.useRef(null);
   return (
     <View style={{flex:1,justifyContent:'center',alignItems:'center'}}>
+<HeaderComp 
+// goBack={()=>navigation.goBack()}
+text="reels screen"
 
+/>
      <FlatList
       ref={flatListRef}
      data ={reels}

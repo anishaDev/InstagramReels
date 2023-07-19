@@ -4,6 +4,7 @@ import org.apache.tools.ant.taskdefs.condition.Os
 
 buildscript {
     ext {
+        kotlin_version = '1.6.10' // <- add this line
         buildToolsVersion = "31.0.0"
         minSdkVersion = 21
         compileSdkVersion = 31
@@ -26,7 +27,7 @@ buildscript {
         classpath("com.facebook.react:react-native-gradle-plugin")
       classpath 'com.google.gms:google-services:4.3.15'
         classpath("de.undercouch:gradle-download-task:4.1.2")
-       
+      classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version" // <- add this line
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }

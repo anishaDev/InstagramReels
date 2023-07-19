@@ -131,6 +131,9 @@ def reactNativeArchitectures() {
 }
 
 android {
+
+
+
     ndkVersion rootProject.ext.ndkVersion
 
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -260,6 +263,8 @@ android {
     }
 }
 
+
+
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
 
@@ -303,6 +308,11 @@ if (isNewArchitectureEnabled()) {
         }
     }
 }
+ 
+
+
+
+
 
 // Run this once to be able to run the application with BUCK
 // puts all compile dependencies into folder libs for BUCK to use
