@@ -3,15 +3,17 @@ import { View, FlatList, Text } from 'react-native';
 
 const MyListComponent = () => {
   const data = [
-    { id: '1', name: 'John' },
+    { id: '1', name: 'Anisha' },
     { id: '2', name: 'Jane' },
     { id: '3', name: 'Doe' },
+    { id: '4', name: 'jenish' },
+    { id: '5', name: 'Doe' },
   ];
 
   const renderItem = ({ item }) => {
     return (
       <View style={{ padding: 10 }}>
-        <Text>{item.name}</Text>
+        <Text style={{color:'#000',fontWeight:'500'}}>{item.name}</Text>
       </View>
     );
   };
